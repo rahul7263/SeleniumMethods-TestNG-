@@ -15,9 +15,12 @@ public class ScreenShot {
      
 	@Test
 	public void screenshot_demo() throws IOException{
-	     System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
-		 WebDriver driver = new ChromeDriver();
-		 driver.get("https://www.opencart.com");
+	     
+		System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.opencart.com");
 		 driver.manage().window().maximize();
 		 
 		 driver.findElement(By.xpath("//a[@class=\"btn btn-black navbar-btn\"]")).click();

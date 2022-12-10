@@ -38,5 +38,6 @@
 	<classpathentry exported="true" kind="lib" path="H:/Software Testing Course/Automation Manual Testing/selenium-java-4.5.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="H:/Software Testing Course/Automation Manual Testing/testng-7.6.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="H:/Software Testing Course/Automation Manual Testing/extentreports-5.0.9.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

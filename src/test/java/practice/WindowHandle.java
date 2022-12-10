@@ -24,6 +24,7 @@ public class WindowHandle {
 		driver.findElement(By.xpath("//button[@class=\"_2KpZ6l _2doB4z\"]")).click();
 	  
 	   WebElement logo = driver.findElement(By.xpath("//img[@title=\"Flipkart\"]"));	 
+	   
 	   boolean True = logo.isDisplayed();
 	   
 	   if(True) {
@@ -40,6 +41,7 @@ public class WindowHandle {
 	   }
 		
 	   Set<String> AllTabs = driver.getWindowHandles();
+	   
 	   for(String x : AllTabs) {
 		   driver.switchTo().window(x);
 	   }
