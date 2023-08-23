@@ -23,7 +23,7 @@ public class ExtentReport {
 	@Test
 	public void report() throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "h:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		//Creating HTML Report
@@ -37,15 +37,15 @@ public class ExtentReport {
         ExtentTest test = extent.createTest("FirstTest","Discription");
 		
 		test.info("user on home page");
-		driver.get("https://www.flipkart.com");
+		driver.get("https://www.flipkart.com/");
 		
 		driver.findElement(By.xpath("//button[@class=\"_2KpZ6l _2doB4z\"]")).click();
 		
 		test.info("user searching a product");
-		driver.findElement(By.xpath("")).sendKeys("iphone 14 pro");
+		driver.findElement(By.xpath("//input[@class=\"Pke_EE\"]")).sendKeys("iphone 14 pro");
 		
 		test.info("user is clicked on search button");
-		driver.findElement(By.xpath("//input[@class=\"_3704LK\"]")).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath("//button[@class=\"_2iLD__\"]")).sendKeys(Keys.ENTER);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		test.info("user found the Respective product");
@@ -54,6 +54,7 @@ public class ExtentReport {
 		
 		test.info("moving to new tab");
 		//window handles moving to new opened tab of website
+		
 		Set<String> NewTab = driver.getWindowHandles();
 		for(String x:NewTab) {
 			

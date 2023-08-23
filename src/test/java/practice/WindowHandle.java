@@ -1,3 +1,5 @@
+
+
 package practice;
 
 import java.time.Duration;
@@ -15,7 +17,8 @@ public class WindowHandle {
      
 	@Test
     public void setup() throws InterruptedException {
-	   
+		
+		//WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.driver.chrome", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com");
@@ -55,9 +58,8 @@ public class WindowHandle {
 	     driver.switchTo().window(MainTab);
 	     
 	     driver.close();
-	     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	     driver.quit();
-	     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	   
 		
 	}
 }

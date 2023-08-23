@@ -3,11 +3,20 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="practice.WindowHandle"/>
+      <class name="practice.ScrollUp_ScrollDown"/>
+      <class name="practice.ruf"/>
+      <class name="practice.Basic_TestNG"/>
       <class name="practice.ExtentReport"/>
+      <class name="practice.Radio_Button"/>
       <class name="practice.iframe"/>
-      <class name="practice.DryRun_ExtentReport"/>
+      <class name="practice.WindowHandle"/>
+      <class name="practice.Complete_TestNG"/>
+      <class name="practice.SoftAssertion"/>
+      <class name="practice.Single_Test"/>
+      <class name="practice.Drop_Down_Select"/>
+      <class name="practice.DRY_RUN"/>
       <class name="practice.ScreenShot"/>
+      <class name="practice.HardAssertion"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

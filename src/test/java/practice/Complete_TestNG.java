@@ -61,7 +61,7 @@ public class Complete_TestNG {
 	@BeforeSuite(groups={"functional"})
     public void Setup() {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
@@ -145,10 +145,10 @@ public class Complete_TestNG {
 		FileUtils.copyFileToDirectory(src,new File("C:\\Users\\Rahul\\git\\Selenium_Lectures\\Selenium_Lectures\\Screenshots"));
 	}
 	
-//	@DataProvider(name ="DP")
-//    public static Object[][] loginCredentails{
-//		return new [][] {"sushilsonawane@gmail.com","Sushil@123"},{"sushilsonawane@gmail.com","Sushil@123"},{"sushilsonawane@gmail.com","Sushil@123"}
-//	
+   	   @DataProvider(name ="DP")
+      //public static Object[][] loginCredentails{
+	  //return new [][] {"sushilsonawane@gmail.com","Sushil@123"},{"sushilsonawane@gmail.com","Sushil@123"},{"sushilsonawane@gmail.com","Sushil@123"}
+   	  //}
 	
 	@AfterMethod
 	public void after_mehtod() {

@@ -21,9 +21,9 @@ public class Windows_Based_Popup_Handling {
 	
    @BeforeSuite
    public void setup() {
-	   
+	 //WebDriverManager.chromedriver().setup();  
 	System.out.println("Windows based popup handling");
-	System.setProperty("webdriver.chrome.driver", "D:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
 	driver = new ChromeDriver();
 	
 	
@@ -33,7 +33,7 @@ public class Windows_Based_Popup_Handling {
 	
 	driver.findElement(By.xpath("//input[@name=\"cusid\"]")).sendKeys("1234567890");
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-    
+      
     driver.findElement(By.xpath("//input[@name=\"submit\"]")).click();
     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     

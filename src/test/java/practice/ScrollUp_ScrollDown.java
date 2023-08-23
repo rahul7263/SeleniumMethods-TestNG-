@@ -27,18 +27,13 @@ public class ScrollUp_ScrollDown {
 	      js.executeScript("window.scrollBy(0,-1200)");
 	      Thread.sleep(2000);
 	      
-	        
-	      
-	      driver.get("https://demo.guru99.com/test/guru99home/");
+          driver.get("https://demo.guru99.com/test/guru99home/");
 		  driver.manage().window().maximize();
 			
 		  WebElement facebook = driver.findElement(By.xpath("//a[text()='Facebook']"));
 		  Thread.sleep(3000);
 			
 	      js.executeScript("arguments[0].scrollIntoView();", facebook);
-		
-	      
-	      
-	      driver.close();
+		  driver.close();
 	}
 }

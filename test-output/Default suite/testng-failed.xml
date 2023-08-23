@@ -3,20 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Single_Test">
+      <class name="practice.practice">
         <methods>
-          <include name="maximize"/>
-          <include name="takescreenshot"/>
-          <include name="url"/>
-          <include name="dbconnectionclosd"/>
-          <include name="businesslogic_2"/>
-          <include name="getcookies"/>
-          <include name="dlcookies"/>
-          <include name="businesslogic_1"/>
-          <include name="openbrowser"/>
-          <include name="closebrowser"/>
+          <include name="logic"/>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="beforesuite"/>
+          <include name="aftertest"/>
+          <include name="beforemethod"/>
+          <include name="beforeclass"/>
         </methods>
-      </class> <!-- practice.Single_Test -->
+      </class> <!-- practice.practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

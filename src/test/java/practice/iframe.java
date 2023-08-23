@@ -27,19 +27,13 @@ public class iframe {
 		  driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class=\"demo-frame lazyloaded\"]")));
 		  
 		  WebElement soruce = driver.findElement(By.xpath("//img[@src=\"images/high_tatras2_min.jpg\"]"));
-		  
-		  
 		  WebElement target = driver.findElement(By.xpath("//div[@id=\"trash\"]"));
 		  
-		  
-		  Actions act = new Actions(driver);
+		   Actions act = new Actions(driver);
 		  act.dragAndDrop(soruce, target).build().perform();
 		  
-		  
 		  driver.switchTo().defaultContent();
-		  
 		  String s = driver.findElement(By.xpath("//div/h1[contains(text(),'Drag And Drop')]")).getText();
-		  
 		  System.out.println(s);
 		  
 		  driver.close();

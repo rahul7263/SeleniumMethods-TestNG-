@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class Radio_Button {
     
 	@Test
-	public void radio() {
+	public void radio() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "H:\\Software Testing Course\\Automation Manual Testing\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
@@ -19,10 +19,13 @@ public class Radio_Button {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-		// Selecting RadioButton	(guru99)
+		//driver.findElement(By.xpath("//input[@id=\"vfb-7-2\"]")).click();
+		// Selecting RadioButton(guru99)
 		WebElement box = driver.findElement(By.xpath("//input[@id=\"vfb-7-2\"]"));
 	    // This will Toggle the Check box
 	    box.click();
+	    Thread.sleep(1000);
+	    driver.close();
 	    
 	    
 	}
